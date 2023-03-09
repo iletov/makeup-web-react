@@ -1,0 +1,13 @@
+.navbar {
+	margin-bottom: 50px;
+}
+
+.navbar a{
+	letter-spacing: 2px;
+	margin-left: 20px;
+}
+
+#collapse {
+	position: relative;
+	text-align: center;
+}
