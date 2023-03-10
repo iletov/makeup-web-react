@@ -16,7 +16,7 @@ function NavbarComponent() {
 
 	return (
 		<>
-			<Navbar expand='sm' className='navbar shadow-sm'>
+			<Navbar expand='sm' className='navbar shadow-sm' >
 				<Container>
 					<Navbar.Brand href="/">Logo</Navbar.Brand>
 					

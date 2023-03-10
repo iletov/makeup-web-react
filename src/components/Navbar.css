@@ -1,13 +1,34 @@
 .navbar {
-	margin-bottom: 50px;
+/*	margin-bottom: 100px;*/
+/*	background-color: whitesmoke;*/
+}
+
+.nav {
+	margin: 10px;
 }
 
 .navbar a{
+	position: relative;
 	letter-spacing: 2px;
 	margin-left: 20px;
+	font-size: 18px;
 }
 
 #collapse {
 	position: relative;
 	text-align: center;
+}
+
+.nav a:before {
+	content: '';
+	position: absolute;
+	background-color: #570A57;
+	height: 3px;
+	width: 0;
+	bottom: -1px;
+	transition: .3s ease;
+}
+
+.nav a:hover:before {
+	width: 85%;
 }

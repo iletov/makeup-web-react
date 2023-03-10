@@ -1,0 +1,27 @@
+.card {
+	position: relative;
+	border: none;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+	overflow: hidden;
+	transition: .2s;
+}
+
+.card:hover {
+	transform: translateY(5px);
+}
+
+.card img {
+	border-radius: 1px;
+
+}
+
+.card button {
+	border-radius: 1px;
+	border-color: #570A57;
+	color: #570A57;
+}
+
+.card button:hover {
+	border-color: #570A57;
+	background-color: #570A57;
+}
