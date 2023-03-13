@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu&display=swap');
 
 body {
+	margin: 0;
+	padding: 0;
+/*	align-items: center;*/
 	font-family: 'Montserrat', sans-serif;
 }
 
-.carousel {
+.carousel-indicators {
+	display: none;
+}
 
+.carousel {
 	position: relative;
 }
 
@@ -13,26 +19,152 @@ body {
 	width: 100%;
 	height: 80vh;
 	position: relative;
+	opacity: .4;
 }
+
+.carousel p, h2 {
+	position: relative;
+	display: flex;
+	bottom: 14rem;
+	right: 5%
+}
+
+.carousel h2 {
+	font-size: 52px;
+}
+
+.carousel .topBtn {
+	position: relative;
+	background: transparent;
+	border-color: #fff;
+	padding: 8px 30px;
+	border-radius: 1px;
+	display: flex;
+	bottom: 10rem;
+	display: flex;
+	right: 5%;
+	letter-spacing: 2px;
+}
+
+.carousel .topBtn:hover {
+	background-color: #fff;
+	color: rgb(20, 0, 51);
+}
+
+.darken {
+	background-color: #000;
+}
+
+/*--------gallery-----*/
+
+.wrap {
+	max-width: 100%;
+	align-items: center;
+	text-align: center;
+	position: relative;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+
+.home {
+	border-radius: 0;
+	margin: 0;
+	width: auto;
+	padding: 0 0.2px 0 0.2px;
+	min-height: 16rem;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.home:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 50%;
+	height: 16rem;
+	background-color: rgba(20, 0, 51, .8);
+	transition: .4s;
+}
+
+.home:hover:before {
+	top: 0;
+}
+
+.home:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 100%;
+	width: 50%;
+	height: 16rem;
+	background-color: rgba(20, 0, 51, .8);
+	transition: .4s;
+}
+
+.home:hover:after {
+	bottom: 0;
+}
+
+.cardContent {
+	position: absolute;
+	top: 100%;
+	padding: 0 40px;
+	color: #fff;
+	z-index: 100;
+	transition: .4s;
+}
+
+.home:hover .cardContent {
+	top: 110px;
+	transition: .4s;
+/*	text-transform: uppercase;*/
+}
+
+.home button {
+	color: #fff;
+	border-color: #fff;
+}
+
+.home button:hover {
+	background-color: #fff;
+	color: rgb(25, 0, 51);
+}
+
+.homeShop {
+
+} 
+
+/*------about-----*/
 
 .about {
 	width: 100%;
 	height: 60vh;
-	background-color: #18122B;
+	background-color: rgb(20, 0, 51);
 	color: whitesmoke;
 }
 
-.about h3 {
+.about h1 {
 	position: relative;
 	text-align: center;
-	padding: 50px;
+	padding: 30px;
 }
 
 .about button {
 	position: relative;
 	left: 50%;
-
+	border-radius: 1px;
+	border-color: #fff;
+	color: #fff;
 }
+
+.about button:hover {
+	border-color: rgb(20, 0, 51);
+	color: rgb(20, 0, 51);
+	background-color: #fff
+}
+
 
 .context {
 	display: flex;
@@ -75,6 +207,22 @@ body {
 	justify-content: center;
 	left: 40%;
 	width: 150px;
-}
+	}
+
+	.carousel p {
+		text-align: left;
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+
+	.carousel h2 {
+		font-size: 26px;
+		margin-top: 20px;
+	}
+
+	.carousel .topBtn {
+		font-size: 14px;
+	}
+
 }
 

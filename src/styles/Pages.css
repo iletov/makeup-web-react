@@ -1,0 +1,67 @@
+.storeWrap {
+	width: 100%;
+	height: 50vh;
+	background: rgba(0, 0, 0, .2)url(../images/shop.jpg) no-repeat;
+	background-position: cover;
+	background-size: 100% 70%;
+/*	background-blend-mode: ;*/
+	background-attachment: fixed;
+	text-align: center;
+	color: rgb(20, 0, 51);
+}
+
+.storeWrap h1 {
+	display: block;
+	align-items: center;
+	justify-content: center;
+	padding-top: 10%;
+}
+
+/*-------About-------*/
+
+.aboutMe {
+	background: rgba(0, 0, 0, .2)url(../images/aboutme.jpg) no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+	background-blend-mode: darken;
+	color: #fff;
+}
+
+.aboutCont {
+	margin-top: 10%;
+
+}
+
+.aboutCont p {
+	padding-top: 2%;
+	text-align: left;
+}
+
+.imgColWrap {
+	position: relative;
+/*	width: 100%;*/
+	padding-left: 15px;
+	padding-right: 15px;
+	display: flex;
+}
+
+
+.imgCol img {
+	display: flex;
+	width: 100%;
+	position: relative;
+	height: 70%;
+}
+
+.imgCol:before {
+	content: '';
+	display: flex;
+	position: absolute;
+	right: 34px;
+	top: 20px;
+	z-index: -1;
+	width: 93%;
+	height: 70%;
+	border: 3px solid #ccc;
+}

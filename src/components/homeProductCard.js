@@ -3,15 +3,15 @@ import { Card, Button, Form, Row, Col} from 'react-bootstrap';
 import { CartContext } from '../CartContext';
 import '../styles/homeProductCard.css'
 
-function HomeProductCard(props) { //props.product is the product 
+function HomeProductCard(props) { 
 	const product = props.product;
 	const cart = useContext(CartContext);	
 	const productQuantity = cart.getProductQuantity(product.id);
 	// console.log(cart.items);
 	return (
 		
-			<Card style={{ width: '22rem' }} className='card'>
-				<Card.Img src={product.image} style={{ height: '16rem' }}/>
+			<Card className='card'>
+				<Card.Img src={product.image}/>
 				<Card.Body>
 					<Card.Title className='title'>{product.title}</Card.Title>
 					<Card.Text>${product.price}</Card.Text>
@@ -19,15 +19,15 @@ function HomeProductCard(props) { //props.product is the product
 						<>
 							<Form as={Row}>
 								<Form.Label column='true' sm='6'>In Cart: {productQuantity}</Form.Label>
-								<Col sm='6'>
-									<Button sm='6' className='mx-2' onClick={() => cart.addToCart(product.id)}>+</Button>
-									<Button sm='6' className='mx-2' onClick={() => cart.removeFromCart(product.id)}>-</Button>
+								<Col sm='6' className='quantityBtn'>
+									<Button variant='outline-light' sm='6' className='mx-2' onClick={() => cart.addToCart(product.id)}>+</Button>
+									<Button variant='outline-light' sm='6' className='mx-2' onClick={() => cart.removeFromCart(product.id)}>-</Button>
 								</Col>
 							</Form>
-							<Button variant='outline-danger' className='my-2' onClick={() => cart.deleteFromCart(product.id)}>Remove from Cart</Button>
+							<Button id='removeBtn' variant='danger' className='my-2' onClick={() => cart.deleteFromCart(product.id)}>Remove from Cart</Button>
 						</>
 						:
-					<Button variant='outline-primary' onClick={() => cart.addToCart(product.id)}>Add To Cart</Button>
+					<Button className='addBtn' variant='outline-primary' onClick={() => cart.addToCart(product.id)}>Add To Cart</Button>
 					}
 				</Card.Body>
 			</Card>

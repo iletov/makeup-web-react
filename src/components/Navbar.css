@@ -8,6 +8,7 @@
 }
 
 .navbar a{
+/*	width: 100px;*/
 	position: relative;
 	letter-spacing: 2px;
 	margin-left: 20px;
@@ -16,19 +17,38 @@
 
 #collapse {
 	position: relative;
-	text-align: center;
+/*	display: flex;*/
+/*	text-align: center;*/
+	align-items: center;
+	width: 100%;
 }
 
 .nav a:before {
 	content: '';
 	position: absolute;
-	background-color: #570A57;
-	height: 3px;
+	background-color: rgba(20, 0, 51, .9);
+	height: 5%;
 	width: 0;
 	bottom: -1px;
 	transition: .3s ease;
+	border-radius: 20px;
 }
 
 .nav a:hover:before {
 	width: 85%;
+}
+
+@media only screen and (max-width: 650px) {
+	.nav a:before {
+		display: none;
+	}
+
+	.navToggle {
+		border-width: 0;
+	}
+
+	.navToggle:focus {
+		border-width: 0px;
+		box-shadow: none;
+	}
 }
