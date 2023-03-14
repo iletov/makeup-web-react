@@ -1,0 +1,84 @@
+.mainFooter {
+	width: 100%;
+	box-sizing: border-box;
+	background-color: #333;
+	color: #fff;
+}
+
+
+.footerRow {
+	padding: 50px 0;
+/*	display: flex;
+	justify-content: center;*/
+}
+
+.footerRow h4 {
+	padding-bottom: 25px;
+	font-size: 20px;
+}
+
+.footerRow h4:before {
+	content: '';
+	width: 50px;
+	height: 2px;
+	background-color: #ffff66;
+	position: absolute;
+	margin-top: 30px;
+
+}
+
+.footerRow a {
+	font-size: 14px;
+	padding-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 300;
+	max-width: 60px;
+	transition: .2s ease;
+}
+
+.footerRow a:hover {
+/*	color: #fff;*/
+	font-weight: 500;
+	transition: .2s ease;
+}
+
+.footerRow p {
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.socialIcons a {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin: 0 10px 10px 0;
+	text-align: center;
+	position: relative;
+}
+
+.socialIcons a:hover > svg{
+	color: #fff;
+}
+
+.socialIcons svg {
+	width: 40px;
+	height: 40px;
+	position: relative;
+	margin: 0px;
+	color: #999;
+	transition: .4s;
+}
+
+.secondRow p {
+	padding-top: 20px;
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	font-size: 12px;
+	font-weight: 300;
+}

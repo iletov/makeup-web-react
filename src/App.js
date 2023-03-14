@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import NavbarComponent from './components/Navbar'
+import Footer from './components/Footer'
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
@@ -18,8 +19,8 @@ function App() {
     <div className="App">  
     <CartProvider>
     <BrowserRouter>
+
         <NavbarComponent></NavbarComponent>
-       
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
@@ -31,7 +32,8 @@ function App() {
             <Route path='/success' element={<Success />} />
             <Route path='/cancel' element={<Cancel />} />
           </Routes>
-        
+        <Footer />    
+    
       </BrowserRouter>
       </CartProvider>
       </div>
