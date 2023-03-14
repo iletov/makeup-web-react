@@ -1,18 +1,29 @@
+
+.navbar-scroll {
+	background-color: #000;
+	transition: .2s ease;
+}
+
+
 .navbar {
-/*	margin-bottom: 100px;*/
-/*	background-color: whitesmoke;*/
+	transition: .2s ease;
 }
 
-.nav {
-	margin: 10px;
-}
-
-.navbar a{
+.navbar a {
 /*	width: 100px;*/
 	position: relative;
 	letter-spacing: 2px;
 	margin-left: 20px;
 	font-size: 18px;
+	color: #ffff;
+}
+
+.navbar a:focus {
+	color: #fff;
+}
+
+.nav {
+	margin: 10px;
 }
 
 #collapse {
@@ -26,7 +37,7 @@
 .nav a:before {
 	content: '';
 	position: absolute;
-	background-color: rgba(20, 0, 51, .9);
+	background-color: #BE6DB7;
 	height: 5%;
 	width: 0;
 	bottom: -1px;
@@ -36,6 +47,20 @@
 
 .nav a:hover:before {
 	width: 85%;
+}
+
+.logo {
+	font-weight: 900;
+	font-size: 24px;
+}
+
+.logo span {
+	color: #BE6DB7;	
+}
+
+.rounded-circle:hover {
+	background-color: transparent;
+	color: #BE6DB7;
 }
 
 @media only screen and (max-width: 650px) {
@@ -51,4 +76,13 @@
 		border-width: 0px;
 		box-shadow: none;
 	}
+
+	.navbar {
+		background-color: #000;
+	}
+
+	.navbar a:hover {
+		color: #BE6DB7;
+	}
+
 }

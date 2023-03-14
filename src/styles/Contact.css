@@ -7,7 +7,7 @@
 .contact {
 	position: relative;
 	min-height: 100vh;
-	padding: 50px 100px;
+	padding: 150px 100px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -48,7 +48,7 @@
 
 .containerWrapper .contactInfo .box {
 	position: relative;
-	padding: 20px 0;
+	padding: 15px 0;
 	display: flex;
 }
 
@@ -79,14 +79,14 @@
 }
 
 .contactForm {
-	width: 40%;
-	padding: 40px;
+	width: 35%;
+	padding: 35px;
 	margin-left: 20px;
 	background: #fff;
 }
 
-.contactForm h2 {
-	font-size: 30px;
+.contactForm h3 {
+	font-size: 26px;
 	color: #333;
 	font-weight: 500;
 }
@@ -152,5 +152,23 @@
 	.containerWrapper .contactInfo,
 	.contactForm {
 		width: 100%;
+	}
+
+	.contact .content h1 {
+		font-size: 22px;
+		margin-top: 80px;
+	}
+
+	.containerWrapper .contactInfo .box {
+		padding: 10px;
+	}
+
+	.containerWrapper .contactInfo .box .text {
+		font-size: 14px;
+		margin-top: 2px;
+	}
+
+	.containerWrapper .contactInfo .box .text h3 {
+		font-size: 18px;
 	}
 }

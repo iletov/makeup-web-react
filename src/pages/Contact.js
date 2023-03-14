@@ -10,7 +10,6 @@ function Contact() {
 			<section className='contact'>
 				<div className='content'>
 					<h1>Contact Me</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat consequat enim, non auctor massa ultrices non. </p>
 				</div>
 				<div className='containerWrapper'>
 					<div className='contactInfo'>
@@ -42,7 +41,7 @@ function Contact() {
 
 					<div className='contactForm'>
 						<form>
-							<h1>Send Message</h1>
+							<h3>Send Message</h3>
 							<div className='inputBox'>
 								<input type='text' name='name' required='required' />
 								<span>Full Name</span>

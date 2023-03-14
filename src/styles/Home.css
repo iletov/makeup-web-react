@@ -17,7 +17,7 @@ body {
 
 .carousel img {
 	width: 100%;
-	height: 80vh;
+	height: 100vh;
 	position: relative;
 	opacity: .6;
 }
@@ -63,15 +63,15 @@ body {
 	text-align: center;
 	position: relative;
 	justify-content: center;
-	margin-top: 1px;
+/*	margin-top: 1px;*/
 	padding: 0;
-}
+} 
 
 .home {
 	border-radius: 0;
 	margin: 0;
 	width: auto;
-	padding: 0 0.2px 0 0.2px;
+	padding: 1px 0.2px 0 0.2px;
 	min-height: 16rem;
 	cursor: pointer;
 	overflow: hidden;
@@ -84,7 +84,8 @@ body {
 	top: 100%;
 	width: 50%;
 	height: 16rem;
-	background-color: rgba(20, 0, 51, .8);
+	background-color: #BE6DB7;
+	opacity: .6;
 	transition: .4s;
 }
 
@@ -99,7 +100,8 @@ body {
 	bottom: 100%;
 	width: 50%;
 	height: 16rem;
-	background-color: rgba(20, 0, 51, .8);
+	background-color: #BE6DB7;
+	opacity: .6;
 	transition: .4s;
 }
 
@@ -140,7 +142,7 @@ body {
 
 .about {
 	width: 100%;
-	height: 60vh;
+	height: 70vh;
 	padding-bottom: 26rem;
 	background-color: rgb(20, 0, 51);
 	color: whitesmoke;
@@ -188,16 +190,14 @@ body {
 
 @media only screen and (max-width: 850px) {
 	.about {
-		position: relative;
-		height: auto;
-		margin: 0;
-		padding: 0;
-		text-align: center;
-		align-items: center;
-		justify-content: center;
+		display: none;
 	}
 
 	.context img {
+		display: none;
+	}
+
+	.context p {
 		display: none;
 	}
 
@@ -207,8 +207,9 @@ body {
 	align-items: center;
 	text-align: center;
 	justify-content: center;
-	left: 40%;
+	left: 35%;
 	width: 150px;
+
 	}
 
 	.carousel p {
@@ -225,6 +226,13 @@ body {
 	.carousel .topBtn {
 		font-size: 14px;
 	}
+
+	.carousel-control-next,
+	.carousel-control-prev {
+		display: none;
+	}
+
+
 
 }
 

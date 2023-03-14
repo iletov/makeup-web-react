@@ -8,19 +8,38 @@ import Logo from '../images/petya-logo.jpg'
 
 function NavbarComponent() {
 	const [show, setShow] = useState(false);
+	
+	const [color, setColor] = useState(false);
+	const changeColor = () => {
+		if (window.scrollY > 90) {
+			setColor(true)
+		} else {
+			setColor(false)
+		}
+	}
+
+	window.addEventListener('scroll', changeColor)
+
 	const handleClose = () => setShow(false);
 	const handleShow = () => setShow(true);
 	const cart = useContext(CartContext);
+
 
 	// The sum of all items in the cart
 	const productsCount = cart.items.reduce((sum, product) => sum + product.quantity, 0);
 
 	return (
 		<>
-			<Navbar expand='sm' className='navbar shadow-sm' >
+			<Navbar fixed='top' 
+					expand='sm'
+					variant='dark'  
+					className={
+								color ? 'navbar navbar-scroll' 
+								:'navbar shadow-lg'} 
+								>
 				<Container>
 					<Navbar.Brand href="/">
-								<img src={Logo} style={{ width: '75px' }} />
+								<div class='logo'><span>PETYA</span> MINCHEVA</div>
 							</Navbar.Brand>
 					
 					
@@ -38,7 +57,7 @@ function NavbarComponent() {
 										width: "3rem", 
 										height: "3rem", 
 										position: "relative", 
-										color: '#000' }}
+										 }}
 								variant='outline-light'
 								className="rounded-circle">
 							<svg
@@ -49,8 +68,8 @@ function NavbarComponent() {
 				            	<div
 					              className="rounded-circle d-flex justify-content-center align-items-center"
 					              style={{
-					                color: "black",
-					                backgroundColor: "white",
+					                color: "#000",
+					                backgroundColor: "#fff",
 					                width: "1.5rem",
 					                height: "1.5rem",
 					                position: "absolute",
