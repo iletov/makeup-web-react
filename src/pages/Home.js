@@ -49,7 +49,7 @@ function Home() {
     {/*-------Gallery-------*/}
 
     <div className='wrap'>
-			<h1 align="center" className="py-5">Gallery</h1>
+			{/*<h1 align="center" style={{ marginTop: '100px', marginBottom: '100px'}}>Gallery</h1>*/}
 			
 			<Row xs={1} md={2} lg={3} className="g-0">		
 				<Col align='center'>
@@ -90,8 +90,8 @@ function Home() {
 
 	{/*----------Shop----------*/}
 
-		<Container className='homeShop my-5'>
-			<h1 align='center' style={{ marginTop: '50px', marginBottom: '50px'}}>Our Products</h1>
+		<Container className='homeShop'>
+			<h1 align='center' style={{ marginTop: '100px', marginBottom: '25px'}}>Our Products</h1>
 				<MultiCarousel />
 		</Container>
 			
