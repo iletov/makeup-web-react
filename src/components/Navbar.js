@@ -31,7 +31,7 @@ function NavbarComponent() {
 	return (
 		<>
 			<Navbar fixed='top' 
-					expand='sm'
+					expand='lg'
 					variant='dark'  
 					className={
 								color ? 'navbar navbar-scroll' 

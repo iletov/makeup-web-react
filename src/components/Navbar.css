@@ -7,6 +7,7 @@
 
 .navbar {
 	transition: .2s ease;
+	z-index: 1;
 }
 
 .navbar a {
@@ -63,7 +64,7 @@
 	color: #BE6DB7;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 1050px) {
 	.nav a:before {
 		display: none;
 	}

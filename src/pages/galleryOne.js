@@ -73,13 +73,18 @@ function GalleryOne() {
 				<img src={tempimgSrc} />
 				<CloseIcon onClick={() => setModel(false)}/>	
 			</div>
+			<div className='galleryHeader'>
+				<h1>2023</h1>
+			</div>
 
 			<Row xs={1} md={2} lg={4} className='gallery g-0'>
 				{data.map((item, index)=> {
 					return (
+
 						<div className='pics' onClick={() =>getImg(item.imgSrc)} >
 							<img src={item.imgSrc} />
 						</div>
+					
 					)
 				})}
 			</Row>	

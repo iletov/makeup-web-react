@@ -84,17 +84,17 @@
 }
 
 @media only screen and (max-width: 600px) {
-	.mainFooter {
+/*	.mainFooter {
 		text-align: center;
-	}
+	}*/
 
-	.footerRow {
+	/*.footerRow {
 		display: flex;
 		position: relative;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-	}
+	}*/
 
 	.footerRow {
 	
